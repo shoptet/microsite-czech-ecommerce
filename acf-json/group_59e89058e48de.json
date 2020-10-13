@@ -1,0 +1,46 @@
+{
+    "key": "group_59e89058e48de",
+    "title": "Nastavení: Stránka",
+    "fields": [
+        {
+            "key": "field_59e89063ea6ed",
+            "label": "Skrýt v menu",
+            "name": "sk_page_hide_in_menu",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Zaškrtnutím skryjete stránku v menu",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1508416182
+}

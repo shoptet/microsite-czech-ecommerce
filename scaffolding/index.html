@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shoptet s.r.o.">
+    <title>Shoptet template scaffolding</title>
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+</head>
+<body>
+
+    <header id="header">
+        <div class="header-inner container">
+        <div id="shp_header">
+            <a href="#">
+                Sdílená část hlavičky
+            </a>
+        </div>
+        <div class="search header-search">
+            <form>
+                <fieldset>
+                    <div class="input-group">
+                        <input type="text" class="form-control" />
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">
+                                <span class="sr-only">Vyhledat</span>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="login header-login">
+            <a href="#" class="has-icon"><i class="fas fa-user"></i> <span>{_'Login'}</span></a>
+        </div>
+    </div>
+    </header>
+
+    <div id="navigation">
+        <div class="container">
+            <div id="shp_navigation_wrapper">
+                <ul id="shp_navigation">
+                    <li class="shp_menu-item">
+                        <a id="categoriesDropdown" href="" class="shp_menu-item-link dropdown-toggle" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link with submenu<span class="caret"></span></a>
+                        <ul class="shp_navigation-submenu dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li class="shp_menu-item"><a href="#" class="shp_menu-item-link dropdown-item">Submenu item</a></li>
+                            <li class="shp_menu-item"><a href="#" class="shp_menu-item-link dropdown-item">Another submenu item</a></li>
+                            <li class="shp_menu-item"><a href="#" class="shp_menu-item-link dropdown-item">Another submenu item</a></li>
+                            <li class="shp_menu-item"><a href="#" class="shp_menu-item-link dropdown-item">Short</a></li>
+                            <li class="shp_menu-item"><a href="#" class="shp_menu-item-link dropdown-item">Another submenu item</a></li>
+                        </ul>
+                    </li>
+                    <li class="shp_menu-item"><a class="shp_menu-item-link" href="#">Link</a></li>
+                    <li class="shp_menu-item"><a class="shp_menu-item-link" href="#">Another link</a></li>
+                    <li class="shp_menu-item"><a class="shp_menu-item-link" href="#">Another link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-claim">
+        <div class="section-inner container">
+
+            <code class="code-css code-block">
+                shoptet/_section.scss
+            </code>
+
+            <div class="claim">
+                <div class="claim-inner">
+                    <code class="code-css code-block">
+                        shoptet/_claim.scss
+                    </code>
+                    <div class="claim-inner">
+                        Claim text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-primary">
+        <div class="section-inner container">
+            <code class="code-css code-block">
+                shoptet/_section.scss
+            </code>
+        </div>
+    </section>
+
+    <section class="section section-secondary">
+        <div class="section-inner container">
+            <code class="code-css code-block">
+                shoptet/_section.scss
+            </code>
+        </div>
+    </section>
+
+    <section class="section section-primary">
+        <div class="section-inner container">
+            <code class="code-css code-block">
+                shoptet/_halfs.scss, shoptet/_services.scss, shoptet/_stars.scss
+            </code>
+            <div class="halfs aligned-left">
+                <div class="half">
+                    <h2>Service title</h2>
+                    <p>
+                        Service description
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-secondary">Show addons</a>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="services">
+                        <a href="#" class="service">
+                            <img src="https://crm.shoptet.cz/user/module_images/module_banner_velkoobchod.jpg" class="service-img">
+                            <h3 class="service-title">Velkoobchod</h3>
+                            <div class="service-info">
+                                <div class="service-price">300 Kč / měs.</div>
+                                <div class="service-category">Zboží</div>
+                            </div>
+                            <div class="service-rating">
+                                <div class="service-rating-stars">
+                                    <div class="stars">
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-off"></i>
+                                    </div>
+                                </div>
+                                <div class="service-rating-count">
+                                    5 643 recenzí
+                                </div>
+                            </div>
+                            <div class="service-labels">
+                                <div class="service-label service-label-shoptet">Shoptet.cz</div>
+                            </div>
+                        </a>
+                        <a href="#" class="service">
+                            <img src="https://crm.shoptet.cz/user/module_images/module_banner_velkoobchod.jpg" class="service-img">
+                            <h3 class="service-title">Velkoobchod</h3>
+                            <div class="service-info">
+                                <div class="service-price">300 Kč / měs.</div>
+                                <div class="service-category">Zboží</div>
+                            </div>
+                            <div class="service-rating">
+                                <div class="service-rating-stars">
+                                    <div class="stars">
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-off"></i>
+                                    </div>
+                                </div>
+                                <div class="service-rating-count">
+                                    5 643 recenzí
+                                </div>
+                            </div>
+                            <div class="service-labels">
+                                <div class="service-label service-label-shoptet">Shoptet.cz</div>
+                            </div>
+                        </a>
+                        <a href="#" class="service">
+                            <img src="https://crm.shoptet.cz/user/module_images/module_banner_velkoobchod.jpg" class="service-img">
+                            <h3 class="service-title">Velkoobchod</h3>
+                            <div class="service-info">
+                                <div class="service-price">300 Kč / měs.</div>
+                                <div class="service-category">Zboží</div>
+                            </div>
+                            <div class="service-rating">
+                                <div class="service-rating-stars">
+                                    <div class="stars">
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-off"></i>
+                                    </div>
+                                </div>
+                                <div class="service-rating-count">
+                                    5 643 recenzí
+                                </div>
+                            </div>
+                            <div class="service-labels">
+                                <div class="service-label service-label-shoptet">Shoptet.cz</div>
+                            </div>
+                        </a>
+                        <a href="#" class="service">
+                            <img src="https://crm.shoptet.cz/user/module_images/module_banner_velkoobchod.jpg" class="service-img">
+                            <h3 class="service-title">Velkoobchod</h3>
+                            <div class="service-info">
+                                <div class="service-price">300 Kč / měs.</div>
+                                <div class="service-category">Zboží</div>
+                            </div>
+                            <div class="service-rating">
+                                <div class="service-rating-stars">
+                                    <div class="stars">
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-on"></i>
+                                        <i class="star star-off"></i>
+                                    </div>
+                                </div>
+                                <div class="service-rating-count">
+                                    5 643 recenzí
+                                </div>
+                            </div>
+                            <div class="service-labels">
+                                <div class="service-label service-label-shoptet">Shoptet.cz</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-primary">
+        <div class="section-inner container">
+            <code class="code-css code-block">
+                shoptet/_colorbox.scss, shoptet/_loader.scss, shoptet/_overlay.scss
+            </code>
+            <a href="#shp_demo_colorboxDemo" class="colorbox">Colorbox</a>
+            <br />
+            <style>
+                #shp_demo_colorboxDemo { display: none; }
+                #colorbox #shp_demo_colorboxDemo { display: block; }
+            </style>
+            <span id="shp_demo_colorboxDemo">
+                Lorem ipsum.
+            </span>
+            <a href="#" id="shp_demo_showOverlay">Show overlay</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" title="Homepage">Homepage</a></li>
+            <li class="breadcrumb-item"><a href="#" title="Parent page">Parent page</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Current page</li>
+        </ol>
+
+        <div class="content">
+            <div class="content-box main-content">
+                <div class="content-box-inner">
+                    <code class="code-css code-block">
+                        shoptet/_content-box.scss
+                    </code>
+                    Lorem ipsum
+                </div>
+                <div class="content-box-inner">
+                    Lorem ipsum
+                </div>
+            </div>
+            <div class="content-box sidebar sidebar-right">
+                <div class="content-box-inner content-box-caption">
+                    <img src="https://crm.shoptet.cz/user/module_images/module_banner_velkoobchod.jpg">
+                </div>
+                <div class="content-box-inner">
+                    Lorem ipsum.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-box main-content full-content">
+                <div class="content-box-inner">
+                    <code class="code-css code-block">
+                        shoptet/_content-box.scss
+                    </code>
+                    Lorem ipsum
+                </div>
+                <div class="content-box-inner">
+                    Lorem ipsum
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared footer -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <style type="text/css">
+        /* for basic width 1140px */
+        #shp_footer * { box-sizing: border-box; }
+        #shp_footer { width: 100%; background: #fff; font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 400; text-align: left; color: #1f1f1f; border-top: 1px solid #e7e7e7; }
+        #shp_footer h2, #shp_footer h3 { font-family: 'Libre Franklin', sans-serif; color: #1f1f1f; margin: 0; }
+        #shp_footer h2 { font-size: 24px; padding: 35px 0; line-height: 24px; font-weight: 300; letter-spacing: 1px; text-align: center; }
+        #shp_footer h3 { font-size: 16px; padding: 10px 0 10px; line-height: 18px; font-weight: 700; letter-spacing: 0; }
+        #shp_footer a, #shp_footer ul li a { color: #14b1ef; text-decoration: none; display: inline; }
+        #shp_footer a:hover, #shp_footer ul li a:hover { color: #0F9AD2; }
+        #shp_footer p { margin: 5px 0; line-height: 20px; color: #1f1f1f; font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 400; text-align: left; color: #1f1f1f; }
+        #shp_footer ul { list-style-type: none; list-style-image: url('https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/li.png'); padding: 5px 0 0 15px; margin: 0; }
+        #shp_footer ul li { padding: 0 0 5px; margin: 0; line-height: 18px; background: none; }
+        #shp_footer .mr-15 { margin-right: 15px; }
+        /* grid design */
+        #shp_footer .shp_container { width: 100%; padding-right: 20px; padding-left: 20px; margin-right: auto; margin-left: auto; max-width: 1170px; }
+        #shp_footer .shp_row { clear: both; margin-left: -15px; margin-right: -15px; display: flex; flex-flow: row nowrap; }
+        #shp_footer .shp_row:after { clear: both; display: block; height: 0; content: ""; }
+        #shp_footer .shp_col { display: block; padding: 15px 20px; flex-basis: 0; flex-grow: 1; }
+        #shp_footer #shp_footer-main .shp_col { padding-top: 50px; }
+        #shp_footer .text-right { text-align: right; }
+        #shp_footer .text-center { text-align: center; }
+        /* social icons */
+        #shp_footer .social-icons { display: flex; align-items: center; align-content: center; justify-content: flex-start; flex-wrap: nowrap; }
+        #shp_footer .social-icons a { opacity: 0.8; margin: 5px; }
+        #shp_footer .social-icons a:first-child { margin-left: 0; }
+        #shp_footer .social-icons a:hover { opacity: 1; }
+        #shp_footer .social-icons a img { border: none; width: 30px; }
+        /* basic form styles */
+        #shp_footer form { padding-bottom: 30px; position: relative; display: block; }
+        #shp_footer form .fieldset { display: flex; align-items: center; align-content: center; flex-wrap: nowrap; min-width: 0; }
+        #shp_footer form .form-protection { display: none; }
+        #shp_footer form input, #shp_footer form button { font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; border-radius: 5px !important; padding: 0 10px; outline: none; height: 42px; margin: 0; box-shadow: none; text-transform: none; width: auto; }
+        #shp_footer form .footer-privacy-policy { font-size: 12px; margin: 8px 0 0; padding: 0; line-height: 15px; color: #1f1f1f; }
+        #shp_footer form .footer-privacy-policy a { font-size: 12px; }
+        /* try us form */
+        #shp_footer #shp_footer-try-us { padding: 10px 0; font-size: 15px; background: #f6f6f6; text-align: center; }
+        #shp_footer form#shp_footer-try-us-form .fieldset { margin: 0 auto; padding: 10px; background: #fff; border: 1px solid #e7e7e7; border-radius: 5px; justify-content: center; width: -moz-fit-content; width: fit-content; }
+        #shp_footer form#shp_footer-try-us-form input, #shp_footer form#shp_footer-try-us-form button { height: 50px; }
+        #shp_footer form#shp_footer-try-us-form input[type="text"] { background: #fff;  color: #1f1f1f; border: 1px solid transparent; min-width: 400px; font-size: 16px; }
+        #shp_footer form#shp_footer-try-us-form button[type="submit"] { background: #f7a12b; color: #fff; border: 1px solid #f7a12b; cursor: pointer; white-space: nowrap; margin: 0; text-transform: uppercase; margin: 0 0 0 5px; font-size: 12px; line-height: 16px; }
+        #shp_footer form#shp_footer-try-us-form button[type="submit"] strong { font-size: 18px; }
+        /* newsletter form */
+        #shp_footer form#newsletter-form .fieldset { border: none; padding: 0; justify-content: flex-start; width: 100%; }
+        #shp_footer form#newsletter-form input[type="text"] { background: #fff;  color: #1f1f1f; border: 1px solid #e7e7e7; min-width: 10%; }
+        #shp_footer form#newsletter-form button[type="submit"] { background: #f7a12b; color: #fff; border: 1px solid #f7a12b; cursor: pointer; white-space: nowrap; margin: 0 0 0 5px; }
+        /* copyright */
+        #shp_footer #shp_footer-copyright { border-top: 1px solid #e7e7e7; padding: 10px 0 20px; color: #999999; font-weight: 300; font-size: 15px; }
+        #shp_footer #shp_footer-copyright img { vertical-align: middle; }
+        /* cookies */
+        #shp_footer-cookies { position: fixed; z-index: 10000001; top: auto; bottom: 0; left: 0; right: 0; background-color: #FDE5C4; color: #000; padding: 8px 0; text-align: center; font-size: 12px; opacity: 0; }
+        #shp_footer-cookies form { padding: 0; margin: 0; }
+        #shp_footer-cookies form button { display: inline-block; color: #fff; background: #f7a12b; border: 1px solid #fb0; padding: 0 10px; margin: 0 0 0 5px; height: 18px; font-size: 12px; font-weight: 400; line-height: 16px; text-align: center; text-decoration: none; text-transform: uppercase; white-space: normal; cursor: pointer; outline: 0; }
+        #shp_footer-cookies form button:hover { background: #f37e00; }
+        #shp_footer-cookies a { color: #1f1f1f; text-decoration: underline; }
+        #shp_footer-cookies a:hover { color: #1f1f1f; text-decoration: none; }
+
+        /* media styles */
+        @media (min-width: 768px) {
+            #shp_footer #shp_footer-description { order: 1; flex-grow: 2; }
+            #shp_footer #shp_footer-information-links { order: 2; flex-grow: 1; }
+            #shp_footer #shp_footer-recommended-links { order: 3; flex-grow: 1; }
+            #shp_footer #shp_footer-newsletter { order: 4; flex-grow: 3; }
+        }
+        @media (max-width: 991px) {
+            #shp_footer .shp_row { flex-flow: row wrap; }
+            #shp_footer .hide-sm { display: none; }
+            #shp_footer #shp_footer-recommended-links { display: none; }
+            #shp_footer form { padding-bottom: 10px; }
+            #shp_footer .social-icons { padding-bottom: 0; }
+            #shp_footer #shp_footer-copyright .shp_col { flex-basis: 100%; width: 100%; padding: 0; }
+            #shp_footer #shp_footer-copyright .text-right { text-align: center; }
+        }
+        @media (max-width: 767px) {
+            #shp_footer h2 { padding: 0 0 20px; }
+            #shp_footer ul { display: flex; justify-content: space-between; flex-flow: row wrap; }
+            #shp_footer ul li { padding: 5px 15px 5px 0; }
+            #shp_footer .shp_row { flex-flow: column wrap; margin-left: 0; margin-right: 0; }
+            #shp_footer .shp_col { padding-left: 0; padding-right: 0; }
+            #shp_footer #shp_footer-main .shp_col { padding-top: 15px; }
+            #shp_footer #shp_footer-information-links { order: 3; }
+            #shp_footer form#shp_footer-try-us-form .fieldset { flex-flow: column; width: 100%; }
+            #shp_footer form#shp_footer-try-us-form input, #shp_footer form#shp_footer-try-us-form button { width: 100%; text-align: center; }
+            #shp_footer form#shp_footer-try-us-form button[type="submit"] { margin: 5px 0 0; }
+            #shp_footer form#shp_footer-try-us-form input[type="text"] { min-width: 200px; }
+        }
+    </style>
+    <footer id="shp_footer">
+        <div id="shp_footer-try-us">
+            <div class="shp_container">
+                <div class="shp_row">
+                    <div class="shp_col">
+                        <h2>Založte si nezávazně vlastní testovací e-shop na Shoptetu</h2>
+                        <form action="https://www.shoptet.cz/projectAction/ShoptetTrial/CreateTrialProject/" method="post" id="shp_footer-try-us-form" name="shp_footer-try-us-form" class="validate-email">
+                            <div>
+                                <input type="hidden" name="formId" value="2">
+                                <span class="form-protection">Nevyplňujte toto pole:</span>
+                                <input type="text" name="surname" class="form-protection">
+                            </div>
+                            <div class="fieldset">
+                                <input type="text" name="email" placeholder="Vložte e-mail" required>
+                                <button type="submit"><strong>Vyzkoušejte si nás</strong> <br>30 dní zdarma a bez závazků</button>
+                            </div>
+                            <div class="footer-privacy-policy">Vložením e-mailu souhlasíte s <a href="https://www.shoptet.cz/podminky-ochrany-osobnich-udaju/" target="_blank">podmínkami ochrany osobních údajů</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shp_footer-main" class="shp_container">
+            <div class="shp_row">
+                <div class="shp_col" id="shp_footer-description">
+                    <a href="https://www.shoptet.cz/" target="_blank"><img src="https://cdn.myshoptet.com/tpl/13953298/shoptet_responsive/master/templates/shoptet_responsive/img/logo.svg" width="200"></a>
+                    <p>Shoptet se na českém a slovenském trhu specializuje na <a href="/provozovani-e-shopu/">pronájem e-shopových řešení</a>, která jsou oblíbená zejména pro jednoduché a intuitivní ovládání. V současné chvíli Shoptet pomáhá podnikat již  13556 aktivním e-shopům, což je třetina všech internetových obchodů působících na českém a slovenském trhu. Také nabízí <a href="/sprava-kamenne-prodejny/">pokladní systém</a>, který umožňuje správu e-shopu a kamenného obchodu v rámci jednoho on-line systému včetně řešení pro EET. Řešení je také plně připraveno na GDPR.</p>
+
+                </div>
+                <div class="shp_col" id="shp_footer-information-links">
+                    <h3>Informace</h3>
+                    <ul>
+                        <li><a href="/hledame-posily/">Kariéra</a></li>
+                        <li><a href="/cenik/">Ceník</a></li>
+                        <li><a href="/co-umime/">Co umíme</a></li>
+                        <li><a href="/sablony/">Šablony</a></li>
+                        <li><a href="/reference/">Reference</a></li>
+                        <li><a href="/kontakt/">Kontakty</a></li>
+                    </ul>
+                </div>
+                <div class="shp_col" id="shp_footer-recommended-links">
+                    <h3>Doporučujeme</h3>
+                    <ul>
+                        <li><a href="https://partneri.shoptet.cz/" target="_blank">Shoptet Partneři</a></li>
+                        <li><a href="https://help.shoptet.cz/" target="_blank">Shoptet Nápověda</a></li>
+                        <li><a href="https://blog.shoptet.cz/" target="_blank">Shoptet Blog</a></li>
+                        <li><a href="https://www.facebook.com/groups/shoptetporadna/" target="_blank">Shoptet Poradna</a></li>
+                        <li><a href="https://www.mujprvnieshop.cz/" target="_blank">Můj první e-shop</a></li>
+                        <li><a href="https://ceska-ecommerce.cz/" target="_blank">Česká e-commerce</a></li>
+                        <li><a href="https://www.eshopiste.cz/" target="_blank">Eshopiště.cz</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLVWymy7oK7490JlrI3htF8MKy7Zqrda2d" target="_blank">Shoptet.TV</a></li>
+                        <li><a href="https://bezskladu.cz/" target="_blank">Bez skladu</a></li>
+                    </ul>
+                </div>
+                <div class="shp_col" id="shp_footer-newsletter">
+                    <h3>Odběr novinek</h3>
+                    <p>1–2× do měsíce vás budeme informovat o novinkách z oboru</p>
+                    <form action="https://www.shoptet.cz/action/MailForm/subscribeToNewsletters/" method="post" id="newsletter-form" name="newsletter-form" class="validate-email">
+                        <div>
+                            <input type="hidden" name="formId" value="2">
+                            <span class="form-protection">Nevyplňujte toto pole:</span>
+                            <input type="text" name="surname" class="form-protection">
+                        </div>
+                        <div class="fieldset">
+                            <input type="text" name="email" placeholder="Vložte e-mail" required>
+                            <button type="submit">Přihlásit k odběru</button>
+                        </div>
+                        <div class="footer-privacy-policy">Vložením e-mailu souhlasíte s <a href="https://www.shoptet.cz/podminky-ochrany-osobnich-udaju/" target="_blank">podmínkami ochrany osobních údajů</a></div>
+                    </form>
+                    <h3>Kde nás najdete</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/shoptet/" target="_blank"><img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-facebook.svg" alt=""></a>
+                        <a href="https://twitter.com/shoptet" target="_blank"><img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-twitter.svg" alt=""></a>
+                        <a href="https://www.instagram.com/shoptet.cz/" target="_blank"><img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-instagram.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCrmFOFsJ7Nd3viUS_Kf5jsg" target="_blank"><img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-youtube.svg" alt=""></a>
+                        <a href="https://cz.linkedin.com/company/shoptet" target="_blank"><img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-linkedin.svg" alt=""></a>
+                    </div>
+                    <p>
+                        <span class="mr-15"><a href="https://www.shoptet.cz/obchodni-podminky/" target="_blank">Obchodní podmínky</a></span>
+                        <span><a href="https://www.shoptet.cz/podminky-ochrany-osobnich-udaju/" target="_blank">Ochrana osobních údajů</a></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div id="shp_footer-copyright">
+            <div class="shp_container">
+                <div class="shp_row">
+                    <div class="shp_col hide-sm">&nbsp;</div>
+                    <div class="shp_col text-center">s&nbsp;<img src="https://cdn.myshoptet.com/tpl/d04070e3/shoptet_responsive/master/templates/shoptet_responsive/img/ico-hearth.png" width="17" height="14" alt="láskou">&nbsp;Shoptet</div>
+                    <div class="shp_col text-right">2008–2018 &copy; Shoptet s.r.o. Všechna práva vyhrazena</div>
+                </div>
+            </div>
+        </div>
+        <div id="shp_footer-cookies">
+            <div class="shp_container">
+                <form id="shp_footer-cookies-form" name="shp_footer-cookies-form"  onsubmit="event.preventDefault(); setCookiesConsent();">
+                    <span>Tento web používá soubory cookie. Dalším procházením tohoto webu vyjadřujete souhlas s jejich používáním. <a href="https://www.shoptet.cz/podminky-ochrany-osobnich-udaju/#cookies" target="_blank">Více informací zde</a></span>
+                    <button type="submit">Rozumím</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var agreed = readShpCookie('shp_cookiesOK');
+            var cookiesForm = document.getElementById('shp_footer-cookies');
+
+            if (agreed == 'agreed') {
+                cookiesForm.parentNode.removeChild(cookiesForm);
+            } else {
+                cookiesForm.style.opacity = 0.8;
+            }
+
+            function createShpCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+
+            function readShpCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+
+            function setCookiesConsent() {
+                createShpCookie('shp_cookiesOK','agreed',30);
+                fadeOutCookieForm();
+                setTimeout(function() {
+                    var cookiesForm = document.getElementById('shp_footer-cookies');
+                    cookiesForm.parentNode.removeChild(cookiesForm);
+                }, 2000);
+                return false;
+            }
+
+            function fadeOutCookieForm() {
+                var fadeTarget = document.getElementById("shp_footer-cookies");
+                var fadeEffect = setInterval(function () {
+                    if (!fadeTarget.style.opacity) {
+                        fadeTarget.style.opacity = 1;
+                    }
+                    if (fadeTarget.style.opacity < 0.1) {
+                        clearInterval(fadeEffect);
+                    } else {
+                        fadeTarget.style.opacity -= 0.1;
+                    }
+                }, 100);
+            }
+        </script>
+    </footer>
+    <!-- / Shared footer -->
+
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bs/js/util.js"></script>
+    <script src="vendor/bs/js/dropdown.js"></script>
+    <script src="vendor/jquery.colorbox-min.js"></script>
+    <script>
+        $(function() {
+            $('.colorbox').colorbox({
+                inline: true
+            });
+        });
+        $('#shp_demo_showOverlay').on('click', function(e) {
+            e.preventDefault();
+            $('body').prepend('<div class="overlay"><div class="loader"></div></div>').addClass('overlay-visible');
+            setTimeout(function() {
+                $('.overlay').remove();
+                $('body').removeClass('overlay-visible');
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>

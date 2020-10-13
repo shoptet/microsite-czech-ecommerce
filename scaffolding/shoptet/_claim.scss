@@ -1,0 +1,47 @@
+
+.claim {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: $h3-font-size;
+    font-weight: 100;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 150px;
+        margin-top: $grid-gutter-width;
+        background-image: $claim-bg-image;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    @media (min-width: map-get($grid-breakpoints, 'sm')) {
+        font-size: $h2-font-size;
+    }
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        text-align: left;
+        &::after {
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 33.333333%;
+            margin-top: 0;
+        }
+    }
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        font-size: $h1-font-size;
+        &::after {
+            height: $claim-image-height;
+        }
+    }
+}
+
+.claim-inner {
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        flex-grow: 0;
+        flex-shrink: 1;
+        width: 66.666666%;
+        padding-right: $grid-gutter-width;
+    }
+}

@@ -1,0 +1,19 @@
+$fa-font-path: "vendor/fa/webfonts";
+$claim-bg-image: url('img/bulbs.png');
+$colorbox-path: "img/colorbox/";
+
+@import "shoptet";
+
+code {
+    background-color: #fdffd6;
+    border: 1px solid $border-color;
+}
+.code-block {
+    display: block;
+    margin-bottom: $spacer / 2;
+    padding: 2px 5px;
+    font-size: $font-size-sm;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

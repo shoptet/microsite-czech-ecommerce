@@ -1,0 +1,36 @@
+#header {
+    background-color: $header-bg;
+    border-bottom: 1px solid $border-color;
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: $header-padding-y;
+    padding-bottom: $header-padding-y;
+    > div {
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: auto;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    @media (max-width: map-get($grid-breakpoints, 'md') - 1) {
+        > div {
+            &:first-child {
+                width: 100%;
+                padding-bottom: $spacer;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.shp_logo {
+    display: block;
+    svg {
+        vertical-align: middle;
+    }
+}
