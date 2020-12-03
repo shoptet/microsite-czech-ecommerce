@@ -331,3 +331,10 @@ add_filter( 'post-count-api-items', function ( $items ) {
   }
   return $items;
 } );
+
+/* Redirect to Shoptet favicon.ico */
+function shp_favicon_redirect(){
+	wp_redirect( get_template_directory_uri() . '/static/img/favicon.ico' );
+	exit;
+}
+add_action( 'do_faviconico','shp_favicon_redirect' );
