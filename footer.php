@@ -7,7 +7,7 @@
 ?>
 		</main>
 
-		<?php echo get_shoptet_footer(); ?>
+		<?php echo Shoptet\ShoptetExternal::get_footer(); ?>
 
 		<?php wp_footer(); ?>
 

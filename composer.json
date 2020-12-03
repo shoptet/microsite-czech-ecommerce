@@ -1,0 +1,13 @@
+{
+  "name": "shoptet/microsite-ecommerce",
+  "description": "",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/shoptet/shoptet-wp-common.git"
+    }
+  ],
+  "require": {
+    "shoptet/shoptet-wp-common": "^1"
+  }
+}

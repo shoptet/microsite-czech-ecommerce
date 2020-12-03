@@ -1,4 +1,7 @@
 <?php
+
+require __DIR__ . '/vendor/autoload.php';
+
 /**
  * SK functions and definitions
  *
@@ -15,6 +18,11 @@ define( 'THEME_WEB_ROOT', get_stylesheet_directory_uri() );
 define( 'THEME_DOCUMENT_ROOT', get_stylesheet_directory() );
 
 define( 'PAGE_POLLS_ID', 17 );
+
+Shoptet\ShoptetExternal::init();
+Shoptet\ShoptetUserRoles::init();
+Shoptet\ShoptetStats::init();
+Shoptet\ShoptetSecurity::init();
 
 /*-----------------------------------------------------------------------------------*/
 /*	ACF
@@ -210,48 +218,6 @@ function sk_excerpt_more( $more ) {
 	return '';
 }
 add_filter( 'excerpt_more', 'sk_excerpt_more' );
-
-function get_shoptet_footer() {
-    // params
-    $id = 'ceskaecommercecz';
-    $temp = 'wp-content/themes/ceska-ecomerce/tmp/shoptet-footer.html';
-
-    $url = 'https://www.shoptet.cz/action/ShoptetFooter/render/';
-    $cache = 24 * 60 * 60;
-    $probability = 50;
-    $ignoreTemp = isset($_GET['force_footer']);
-
-    // code
-    $footer = '';
-    if (!$ignoreTemp && is_readable($temp)) {
-        $footer = file_get_contents($temp);
-        $regenerate = rand(1, $probability) === $probability;
-        if (!$regenerate) {
-            return $footer;
-        }
-        $mtine = filemtime($temp);
-        if ($mtine + $cache > time()) {
-            return $footer;
-        }
-    }
-
-    $address = $url . '?id=' . urlencode($id);
-    $new = file_get_contents($address);
-    if ($new !== FALSE) {
-        $newTemp = $temp . '.new';
-        $length = strlen($new);
-        $result = file_put_contents($newTemp, $new);
-        if ($result === $length) {
-            rename($newTemp, $temp);
-        }
-        $footer = $new;
-    }
-
-    return $footer;
-}
-
-add_filter( 'get_shoptet_footer', 'get_shoptet_footer' );
-
 
 /**
  * Custom WordPress navigation
