@@ -23,6 +23,24 @@ Shoptet\ShoptetExternal::init();
 Shoptet\ShoptetUserRoles::init();
 Shoptet\ShoptetStats::init();
 Shoptet\ShoptetSecurity::init();
+Shoptet\ShoptetPostCount::init();
+
+/**
+ * Add query arguments to post count api
+ */
+add_filter( 'shoptet_post_count_query_args', '__return_empty_array' );
+
+/**
+ * Post Count API Plugin: Add a revenue
+ */
+add_filter( 'shoptet_post_count_result', function ( $items ) {
+  $size_page_id = 2;
+  $statistics = get_field( 'sk_size_statistics', $size_page_id );
+  if ( isset( $statistics[0]['number'] ) ) {
+    $items['czechecommerceRevenueCount'] = intval( $statistics[0]['number'] );
+  }
+  return $items;
+} );
 
 /*-----------------------------------------------------------------------------------*/
 /*	ACF
@@ -319,18 +337,6 @@ if ( ! function_exists( 'main_menu_setup' ) ):
 		}
  	}
 endif;
-
-/**
- * Post Count API Plugin: Add a revenue
- */
-add_filter( 'post-count-api-items', function ( $items ) {
-  $size_page_id = 2;
-  $statistics = get_field( 'sk_size_statistics', $size_page_id );
-  if ( isset( $statistics[0]['number'] ) ) {
-    $items['czechecommerceRevenueCount'] = intval( $statistics[0]['number'] );
-  }
-  return $items;
-} );
 
 /* Redirect to Shoptet favicon.ico */
 function shp_favicon_redirect(){
