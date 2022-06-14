@@ -6,7 +6,7 @@
  */
 ?>
 
-	<section class="section" role="region" id="zajimavosti">
+	<section class="section section--gray-border" role="region" id="zajimavosti">
 		<div class="row-main">
 
 			<?php
