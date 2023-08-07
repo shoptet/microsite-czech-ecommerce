@@ -337,10 +337,3 @@ if ( ! function_exists( 'main_menu_setup' ) ):
 		}
  	}
 endif;
-
-/* Redirect to Shoptet favicon.ico */
-function shp_favicon_redirect(){
-	wp_redirect( get_template_directory_uri() . '/static/img/favicon.ico' );
-	exit;
-}
-add_action( 'do_faviconico','shp_favicon_redirect' );
