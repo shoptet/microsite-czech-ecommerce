@@ -3951,7 +3951,7 @@ body {
 
     .header__cell--logos img {
         width: 100%;
-        max-height: 50px;
+        max-height: 40px;
     }
 
     .header__cell {
@@ -3981,7 +3981,7 @@ body {
     }
 
     .header__cell--logos img {
-        height: 50px;
+        height: 40px;
         width: auto;
     }
 
