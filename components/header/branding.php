@@ -3,7 +3,7 @@
 	<div class="header__table">
 		<div class="header__cell header__cell--logos">
 			<div class="header__logo">
-                <a href="./"><img src="<?php echo THEME_WEB_ROOT; ?>/static/img/illust/content/logo-ceska-ecommerce.svg" alt="Česká e-commerce" width="636" height="64"></a>
+                <a href="./"><img src="<?php echo THEME_WEB_ROOT; ?>/static/img/illust/content/logo-ceska-ecommerce.svg" alt="Česká e-commerce" width="1174" height="60"></a>
 			</div>
 		</div>
 		<div class="header__cell header__cell--claim">
