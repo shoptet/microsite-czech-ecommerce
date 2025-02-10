@@ -82,14 +82,6 @@
 						</dl>
 
 						<?php
-							else :
-								?>
-								<dl class="b-intro__list">
-									<dt class="b-intro__label">&nbsp;</dt>
-									<dd class="b-intro__value">&nbsp;</dd>
-								</dl>
-
-								<?php
 							endif;
 
 							// CHANGE

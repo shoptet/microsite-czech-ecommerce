@@ -111,15 +111,15 @@
 
 						<ol class="b-winner mb-50">
 							<li class="b-winner__item b-winner--gold">
-								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2017/11/phone.png" /><br /> Telefony
+								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2017/11/phone.png" /><br /> Mobilní telefony
 							</li>
 
 							<li class="b-winner__item b-winner--silver">
-								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2017/11/gadgets.png" /><br /> Gadgety
+								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2024/11/laptop.png" /><br /> Notebooky
 							</li>
 
 							<li class="b-winner__item b-winner--bronz">
-								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2017/11/pool.png" /><br /> Bazény
+								<img src="https://www.ceska-ecommerce.cz/wp-content/uploads/2024/11/microwave.png" /><br /> Mikrovlnné trouby
 							</li>
 
 						</ol>
